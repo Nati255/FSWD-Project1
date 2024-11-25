@@ -264,23 +264,41 @@ h3{
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
+    position: relative;
 }
 .recommended-col img{
     width: 100%;
     height: 70%;
     object-fit: initial;
-    border-radius: 10px;
-}
-.recommended-col p{
-    padding: 0;
-    
-}
-.recommended-col h3{
-    margin-top: 16px;
-    margin-bottom: 15px;
-    text-align: center;
+    transition: 0.5s ease;
 }
 
+.recommended-col:hover img {
+    
+    opacity: 0.5;
+}
+.recommended-col:hover p{
+    opacity: 0.7;
+    background: #A80C1E;
+    bottom: 49%;
+}
+.recommended-col p{
+    width: 100%;
+    font-weight: 400;
+    color: #fff;
+    font-size: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1.5s;
+}
+.recommended-btn{
+    margin-bottom: 50px;
+    z-index: 2;
+    
+}
 /*----------testimonials-------*/
 .testimonials{
     width: 80%;
@@ -364,4 +382,64 @@ h3{
 }
 .sub-header h1{
     margin-top: 100px;
+}
+
+ /*-----------cotact us page--------*/
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+
+}
+.location iframe{
+    width:100%;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa{
+    font-size: 28px;
+    color: #A80C1E;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+.contact-col form {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent light background */
+    padding: 30px;
+    border-radius: 10px; /* Smooth edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    color: #fff; /* White text color */
+}
+
+/* Input and Textarea Fields */
+.contact-col input, .contact-col textarea {
+    background: rgba(255, 255, 255, 0.2); /* Light transparent background */
+    color: #ffffff; /* White text */
+    border: 1px solid #A80C1E; /* Subtle border */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px; /* Rounded edges */
+    outline: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 100%;
 }

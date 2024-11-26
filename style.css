@@ -575,3 +575,91 @@ h3{
     font-size: 16px;
     width: 100%;
 }
+
+/* Ratings Section */
+.ratings {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+}
+
+.ratings-header h2 {
+    font-size: 2.5rem;
+    color: #A80C1E;
+    margin-bottom: 10px;
+}
+
+.ratings-header p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.ratings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.ratings-table {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.ratings-table h3 {
+    color: #A80C1E;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead th {
+    background-color: #A80C1E;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+tbody td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.hero-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+table th, table td {
+    text-align: center;
+    padding: 10px;
+}
+
+table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+table img {
+    max-width: 50px; /* You can adjust the size of the images */
+    height: auto;
+}

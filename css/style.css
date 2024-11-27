@@ -370,7 +370,7 @@ h3{
 .sub-header{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/backgroundRecomended.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/backgroundRecomended.png);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -578,35 +578,34 @@ h3{
 
 /* Ratings Section */
 .ratings {
-    width: 90%; /* Slightly increase width on smaller screens */
+    width: 90%; 
     margin: auto;
     padding: 50px 0;
     background-color: #121212;
     color: #fff;
     text-align: center;
-    display: grid; /* Use Grid for the entire section */
-    gap: 20px; /* Add spacing between items */
+    display: grid;
+    gap: 20px; 
 }
 
 /* Ratings Section Header */
 .ratings-header {
-    display: grid; /* Use Grid for layout */
-    grid-template-rows: auto auto; /* Stack header elements vertically */
-    justify-items: center; /* Center align horizontally */
-    gap: 10px; /* Add space between the heading and paragraph */
-    text-align: center; /* Ensure text is centered */
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    gap: 10px;
 }
 
 .ratings-header h2 {
     font-size: 2.5rem;
     color: #A80C1E;
-    margin: 0; /* Remove margin for better control */
+    margin: 0; 
 }
 
 .ratings-header p {
     font-size: 1rem;
     color: #ddd;
-    margin: 0; /* Remove margin for better control */
+    margin: 0; 
 }
 
 /* Ratings Table Section */
@@ -615,38 +614,40 @@ h3{
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+    overflow-x: auto; 
 }
 
 /* Table Styles */
 table {
     width: 100%;
     border-collapse: collapse;
-    text-align: left;
+    text-align: center; /* Combined 'text-align' for the table here */
 }
 
 thead th {
     background-color: #A80C1E;
     color: #fff;
     padding: 10px;
-    text-align: center;
-    font-size: 1rem; /* Adjust font size for smaller screens */
+    font-size: 1rem; 
 }
 
 tbody td {
     padding: 10px;
-    text-align: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    font-size: 0.9rem; 
 }
 
 tbody tr:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    cursor: pointer;
+}
+
+/* For Iron Man's Row */
+.ironman {
+    cursor: url("../images/MarvelIronMen.jpg"), auto;
 }
 
 table img {
-    width: 120px; /* Smaller size for images */
+    width: 120px; 
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
@@ -656,11 +657,11 @@ table img {
 /* Media Queries */
 @media (max-width: 768px) {
     .ratings {
-        gap: 15px; /* Adjust gap for smaller screens */
+        gap: 15px; 
     }
 
     .ratings-header h2 {
-        font-size: 2rem; /* Smaller font size for headings */
+        font-size: 2rem; 
     }
 
     .ratings-header p {
@@ -668,15 +669,15 @@ table img {
     }
 
     table {
-        font-size: 0.8rem; /* Reduce overall font size */
+        font-size: 0.8rem; 
     }
 
     thead th, tbody td {
-        padding: 8px; /* Reduce padding */
+        padding: 8px; 
     }
 
     table img {
-        width: 100px; /* Smaller image size */
+        width: 100px; 
         height: 100px;
     }
 }
@@ -687,7 +688,7 @@ table img {
     }
 
     .ratings-header h2 {
-        font-size: 1.8rem; /* Even smaller heading */
+        font-size: 1.8rem; 
     }
 
     .ratings-header p {
@@ -699,11 +700,11 @@ table img {
     }
 
     thead th, tbody td {
-        padding: 5px; /* Minimal padding for small screens */
+        padding: 5px; 
     }
 
     table img {
-        width: 80px; /* Compact images */
+        width: 80px; 
         height: 80px;
     }
 }

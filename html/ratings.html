@@ -1,87 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marvel Mania</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <section class="sub-header">
-        <nav>
-            <a href="index.html"><img src="../images/SpidermanLogo.jpg" alt="Marvel Logo"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="ratings.html">RATINGS</a></li>
-                    <li><a href="recommended.html">RECOMMENDED</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT US</a></li>
-                </ul>
+  <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marvel Mania</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="../images/SpidermanLogo.jpg" alt="Marvel Logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="ratings.html">RATINGS</a></li>
+                        <li><a href="recommended.html">RECOMMENDED</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Hero Ratings</h1>
+        </section>
+        <section class="ratings">
+            <header class="ratings-header">
+                <h2>Superhero Ratings</h2>
+                <p>See how superheroes stack up in various categories</p>
+            </header>
+            <div class="ratings-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Superhero</th>
+                            <th>Image</th>
+                            <th>Strength</th>
+                            <th>Speed</th>
+                            <th>Intelligence</th>
+                            <th>Fans</th>
+                            <th>Movies</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Iron Man</td>
+                            <td><img src="../images/MarvelIronMen.jpg" alt="Hero 1"></td>
+                            <td>8/10</td>
+                            <td>9/10</td>
+                            <td>7/10</td>
+                            <td>1M</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Hero 2</td>
+                            <td><img src="hero2.jpg" alt="Hero 2"></td>
+                            <td>7/10</td>
+                            <td>6/10</td>
+                            <td>8/10</td>
+                            <td>2M</td>
+                            <td>4</td>
+                        </tr>
+                        <!-- More rows as needed -->
+                    </tbody>
+                </table>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
-        <h1>Hero Ratings</h1>
-    </section>
-    <section class="ratings">
-        <header class="ratings-header">
-            <h2>Superhero Ratings</h2>
-            <p>See how superheroes stack up in various categories</p>
-        </header>
-        <div class="ratings-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Superhero</th>
-                        <th>Image</th>
-                        <th>Strength</th>
-                        <th>Speed</th>
-                        <th>Intelligence</th>
-                        <th>Fans</th>
-                        <th>Movies</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Iron Man</td>
-                        <td><img src="../images/MarvelIronMen.jpg" alt="Hero 1"></td>
-                        <td>8/10</td>
-                        <td>9/10</td>
-                        <td>7/10</td>
-                        <td>1M</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>Hero 2</td>
-                        <td><img src="hero2.jpg" alt="Hero 2"></td>
-                        <td>7/10</td>
-                        <td>6/10</td>
-                        <td>8/10</td>
-                        <td>2M</td>
-                        <td>4</td>
-                    </tr>
-                    <!-- More rows as needed -->
-                </tbody>
-            </table>
-        </div>
-    </section>
-    
-    <section class="footer">
-        <h4>About Us</h4>
-        <p>Welcome to our Marvel fan site! Celebrating the stories, heroes, and universe we all love. Stay connected for updates, rankings, and more!</p>
-        <div class="icons">
-            <a href="https://www.facebook.com/Marvel/"><i class="fa fa-facebook"></i></a>
-            <a href="https://x.com/marvel"><i class="fa fa-twitter"></i></a>
-            <a href="https://www.instagram.com/marvel/"><i class="fa fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/marvel-entertainment"><i class="fa fa-linkedin"></i></a>
-            <a href="https://www.youtube.com/@marvel"><i class="fa fa-youtube-play"></i></a>
-        </div>
-        <p class="end"> Made With <i class="fa fa-heart-o"></i> by Ori Shoshana and Nati Stern </p>
-    </section>
-</body>
+        </section>
+        
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Welcome to our Marvel fan site! Celebrating the stories, heroes, and universe we all love. Stay connected for updates, rankings, and more!</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/Marvel/"><i class="fa fa-facebook"></i></a>
+                <a href="https://x.com/marvel"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/marvel/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/marvel-entertainment"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/@marvel"><i class="fa fa-youtube-play"></i></a>
+            </div>
+            <p class="end"> Made With <i class="fa fa-heart-o"></i> by Ori Shoshana and Nati Stern </p>
+        </section>
+    </body>
 </html>

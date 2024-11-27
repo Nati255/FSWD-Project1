@@ -15,7 +15,12 @@
         <nav>
             <a href="index.html"><img src="../images/SpidermanLogo.jpg"></a>
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()" ></i>
+                <button class="hamburger-icon">
+                    <label for="dropdown">
+                      <i class="fa fa-times"></i>
+                    </label>
+                    <input type="checkbox" id="dropdown" />
+                </button>
                 <ul>
                     <li><a href="index.html">HOME</a></li> 
                     <li><a href="ratings.html">RATINGS</a></li>
@@ -24,7 +29,12 @@
                     <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()" ></i>
+            <button class="hamburger-icon">
+                <label for="dropdown">
+                  <i class="fa fa-bars"></i>
+                </label>
+                <input type="checkbox" id="dropdown" />
+            </button>
         </nav>
         <h1>Recommended Movies</h1>
     </section>

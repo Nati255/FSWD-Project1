@@ -685,16 +685,19 @@ tbody td {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.9rem; 
 }
-
 tbody tr:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
-
 /* For Iron Man's Row */
 .ironman :hover {
-    cursor: url("../images/MarvelIronMen.jpg");
+    cursor: url("../images/ironmanHover.png"), auto;
 }
-
+.thor:hover{
+    cursor: url("../images/thorHover.png"), auto;
+}
+.captain:hover{
+    cursor: url("../images/captainHover.png"), auto;
+}
 table img {
     width: 120px; 
     height: 120px;

@@ -99,9 +99,18 @@ nav img{
 nav .fa{
     display: none;
 }  
+.hamburger-icon{
+    display:none;
+    border:none;
+    background-color:transparent;
+}
+.hamburger-icon input[type="checkbox"] {
+    appearance: none;
+}
+
 @media(max-width: 700px){
     .header{
-        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/headeringRsp.jpg);
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/headeringRsp.jpg);
     }
     .text-box h1{
         font-size: 20px;
@@ -136,6 +145,20 @@ nav .fa{
     }
     .nav-links ul{
         padding: 30px;
+    }
+    .hamburger-icon {
+        display: block;
+      }
+    .header:has(.hamburger-icon input[type="checkbox"]:checked) .nav-links{
+        right: 0px;
+    }
+    /* Switch between icons */
+    .header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
+        display: none;
+    }
+
+    .header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-times {
+        display: inline-block;
     }
 
 }
@@ -333,7 +356,7 @@ h3{
 .testimonial-col .fa{
     color: #0b0606;
 }
-@media(mmax-width:700px){
+@media(max-width:700px){
     .testimonial-col img{
         margin-left: 0px;
         margin-right: 15px;
@@ -346,6 +369,15 @@ h3{
     width: 100%;
     text-align: center;
     padding: 30px 0;
+}
+.footer hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, #A80C1E, #FF4500, #A80C1E);
+    margin: 20px auto;
+    border-radius: 5px;
+    width: 80%;
+    
 }
 .footer h4{
     margin-bottom: 25px;
@@ -366,7 +398,7 @@ h3{
 }
 
 
-/*--------- recomened movies page--------------*/
+/*--------- recommended movies page--------------*/
 .sub-header{
     height: 50vh;
     width: 100%;
@@ -378,6 +410,23 @@ h3{
 }
 .sub-header h1{
     margin-top: 100px;
+}
+@media(max-width: 700px){
+    .hamburger-icon {
+        display: block;
+      }
+    .sub-header:has(.hamburger-icon input[type="checkbox"]:checked) .nav-links{
+        right: 0px;
+    }
+    /* Switch between icons */
+    .sub-header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
+        display: none;
+    }
+
+    .sub-header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-times {
+        display: inline-block;
+    }
+
 }
 
 
@@ -642,8 +691,8 @@ tbody tr:hover {
 }
 
 /* For Iron Man's Row */
-.ironman {
-    cursor: url("../images/MarvelIronMen.jpg"), auto;
+.ironman :hover {
+    cursor: url("../images/MarvelIronMen.jpg");
 }
 
 table img {

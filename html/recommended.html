@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvel Mania</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/recommended.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
@@ -15,16 +15,25 @@
         <nav>
             <a href="index.html"><img src="../images/SpidermanLogo.jpg"></a>
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()" ></i>
+                <button class="hamburger-icon">
+                    <label for="dropdown">
+                      <i class="fa fa-times"></i>
+                    </label>
+                    <input type="checkbox" id="dropdown" />
+                </button>
                 <ul>
                     <li><a href="index.html">HOME</a></li> 
                     <li><a href="ratings.html">RATINGS</a></li>
                     <li><a href="recommended.html">RECOMMENDED</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
                     <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()" ></i>
+            <button class="hamburger-icon">
+                <label for="dropdown">
+                  <i class="fa fa-bars"></i>
+                </label>
+                <input type="checkbox" id="dropdown" />
+            </button>
         </nav>
         <h1>Recommended Movies</h1>
     </section>
@@ -83,21 +92,22 @@
         <h2>Trailers</h2>
         <div class="video-row">
             <div class="video-card">
-                <video src="videos/trailer1.mp4" controls poster="images/trailer1-thumbnail.jpg"></video>
+                <video src="../videos/ThorTrailer.mp4" controls></video>
                 <h3>Thor: <span class="color1">Love and Thunder Trailer</span></h3>
             </div>
             <div class="video-card">
-                <video src="videos/trailer2.mp4" controls poster="images/trailer2-thumbnail.jpg"></video>
+                <video src="../videos/AvengersTrailer.mp4" controls ></video>
                 <h3>Avengers: <span class="color1">Endgame Highlights</span></h3>
             </div>
             <div class="video-card">
-                <video src="videos/trailer3.mp4" controls poster="images/trailer3-thumbnail.jpg"></video>
+                <video src="../videos/IronManTrailer.mp4" controls ></video>
                 <h3>Iron Man:<span class="color1">Legacy Recap</span></h3>
             </div>
         </div>
         <a href="videos.html" class="hero-btn">View All Videos</a>
     </section>
     <section class="footer">
+        <hr>
         <h4>About Us</h4>
         <p>Welcome to our Marvel fan site! Celebrating the stories, heroes, and universe we all love. 
             <br>Stay connected for updates, rankings, and more!<br>

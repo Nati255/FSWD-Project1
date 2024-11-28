@@ -370,6 +370,15 @@ h3{
     text-align: center;
     padding: 30px 0;
 }
+.footer hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, #A80C1E, #FF4500, #A80C1E);
+    margin: 20px auto;
+    border-radius: 5px;
+    width: 80%;
+    
+}
 .footer h4{
     margin-bottom: 25px;
     margin-top: 20px;
@@ -389,7 +398,7 @@ h3{
 }
 
 
-/*--------- recomened movies page--------------*/
+/*--------- recommended movies page--------------*/
 .sub-header{
     height: 50vh;
     width: 100%;

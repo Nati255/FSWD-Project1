@@ -690,13 +690,46 @@ tbody tr:hover {
 }
 /* For Iron Man's Row */
 .ironman :hover {
-    cursor: url("../images/ironmanHover.png"), auto;
+    cursor: url("../images/man.png"), auto;
 }
 .thor:hover{
-    cursor: url("../images/thorHover.png"), auto;
+    cursor: url("../images/movie.png"), auto;
+}
+.captainA:hover{
+    cursor: url("../images/cap.png"), auto;
+}
+.spidy :hover {
+    cursor: url("../images/marvel.png"), auto;
+}
+.deadpool:hover{
+    cursor: url("../images/mask.png"), auto;
+}
+.wolverine:hover{
+    cursor: url("../images/wolv.png"), auto;
+}
+.blackPanther:hover{
+    cursor: url("../images/black.png"), auto;
+}
+.blackWidow:hover{
+    cursor: url("../images/black-widow.png"), auto;
+}
+.hulk:hover{
+    cursor: url("../images/file.png"), auto;
+}
+.loki:hover{
+    cursor: url("../images/loki.png"), auto;
+}
+.strange:hover{
+    cursor: url("../images/strange.ico"), auto;
+}
+.antman:hover{
+    cursor: url("../images/antman.png"), auto;
 }
 .captain:hover{
-    cursor: url("../images/captainHover.png"), auto;
+    cursor: url("../images/captain.png"), auto;
+}
+.witch:hover{
+    cursor: url("../images/witch.png"), auto;
 }
 table img {
     width: 120px; 

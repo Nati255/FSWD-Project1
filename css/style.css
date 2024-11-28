@@ -691,8 +691,8 @@ tbody tr:hover {
 }
 
 /* For Iron Man's Row */
-.ironman {
-    cursor: url("../images/MarvelIronMen.jpg"), auto;
+.ironman :hover {
+    cursor: url("../images/MarvelIronMen.jpg");
 }
 
 table img {

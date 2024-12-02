@@ -29,14 +29,12 @@ nav img{
     width: 100px;
     height: 100px;
     object-fit: cover;
-    opacity: 1;
     border: 1px solid #A80C1E;
     border-radius: 50%;
 }
 .nav-links{
     flex: 1;
     text-align: right;
-
 }
 .nav-links ul li{
     list-style: none;
@@ -61,6 +59,14 @@ nav img{
 }
 .nav-links ul li:hover::after{
     width: 100%;
+}
+.hamburger-icon{
+    display:none;
+    border:none;
+    background-color:transparent;
+}
+.hamburger-icon input[type="checkbox"] {
+    appearance: none;
 }
 .text-box{
     width: 90%;
@@ -98,21 +104,12 @@ nav img{
 nav .fa{
     display: none;
 }  
-.hamburger-icon{
-    display:none;
-    border:none;
-    background-color:transparent;
-}
-.hamburger-icon input[type="checkbox"] {
-    appearance: none;
-}
-
 @media(max-width: 700px){
     .header{
         background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/headeringRsp.jpg);
     }
     .text-box h1{
-        font-size: 20px;
+        font-size: 30px;
     }
     nav img {
         width: 50px; 
@@ -147,7 +144,7 @@ nav .fa{
     }
     .hamburger-icon {
         display: block;
-      }
+    }
     .header:has(.hamburger-icon input[type="checkbox"]:checked) .nav-links{
         right: 0px;
     }
@@ -157,7 +154,7 @@ nav .fa{
     }
 
     .header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-times {
-        display: inline-block;
+        display: block;        
     }
 
 }
@@ -173,7 +170,7 @@ h1{
     font-size: 36px;
     font-weight: 600;
 }
-p{
+.row p{
     color: #ffffff;
     font-size: 14px;
     font-weight: 300;
@@ -196,13 +193,10 @@ p{
     transition: 0.5s;
     
 }
-h3{
+.row h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
-}
-.offer-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 .btny{
     background-color: #080606;
@@ -295,14 +289,8 @@ h3{
     transition: 0.5s ease;
 }
 
-.recommended-col:hover img {
-    
+.recommended-col:hover img { 
     opacity: 0.5;
-}
-.recommended-col:hover p{
-    opacity: 0.7;
-    background: #A80C1E;
-    bottom: 49%;
 }
 .recommended-col p{
     width: 100%;
@@ -316,6 +304,22 @@ h3{
     opacity: 0;
     transition: 1.5s;
 }
+.recommended-col:hover p{
+    opacity: 0.7;
+    background: #A80C1E;
+    bottom: 49%;
+}
+.recommended-btn{
+    position: absolute;
+    margin-top: -70px;
+    transform: translate(-50%,-50%);
+}
+@media(max-width:700px){
+    .recommended-btn{
+        margin-top: 20px;
+    }
+}
+
 
 /*----------testimonials-------*/
 .testimonials{
@@ -341,7 +345,7 @@ h3{
     border: 3px solid #FFFFFF; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     object-fit: cover; 
-    margin-right: 15px;;
+    margin-right: 15px;
 }
 
 .testimonial-col p{
@@ -359,7 +363,9 @@ h3{
     .testimonial-col img{
         margin-left: 0px;
         margin-right: 15px;
-    
+    }
+    .testimonials{
+        margin-top: 50px;
     }
 }
 
@@ -394,4 +400,9 @@ h3{
 }
 .footer p{
     margin-right: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
 }

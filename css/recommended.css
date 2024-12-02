@@ -20,6 +20,9 @@ body{
 }
 .sub-header h1{
     margin-top: 100px;
+    font-size: 36px;
+    font-weight: 600;
+    
 }
 nav{
     display: flex;
@@ -92,7 +95,55 @@ nav .fa{
     background: #A80C1E;
     transition: 1s;
 }
+@media(max-width: 700px){
+    nav img {
+        width: 50px; 
+        height: auto; 
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        background: #A80C1E;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
 
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .hamburger-icon {
+        display: block;
+      }
+    .sub-header:has(.hamburger-icon input[type="checkbox"]:checked) .nav-links{
+        right: 0px;
+    }
+    /* Switch between icons */
+    .sub-header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
+        display: none;
+    }
+
+    .sub-header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-times {
+        display: inline-block;
+    }
+
+}
+/*-----------featured movie section--------------------------------*/
 .featured-movie {
     display: flex;
     align-items: center;
@@ -107,6 +158,7 @@ nav .fa{
     width: 500px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
 }
 .featured-movie h2 {
     color: #A80C1E;
@@ -119,12 +171,52 @@ nav .fa{
     color: #ddd;
     text-align: center;
 }
-
 .featured-movie .hero-btn{
     position: relative;
     margin-left: 270px;
 }
-/* Movie Grid */
+@media (max-width: 700px) {
+    .featured-movie {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+        position: relative; 
+    }
+
+    .featured-movie img {
+        width: 100%; 
+        height: 300px;
+        border-radius: 10px;
+        margin: 0; 
+        position: relative; 
+    }
+
+    .featured-movie .hero-btn {
+        position: absolute; 
+        bottom: 80px;
+        margin: auto;
+        transform: translateX(-50%); 
+        background: #A80C1E; 
+        color: #fff;
+        border: none;
+        padding: 12px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+        transition: 1s ease; 
+        z-index: 2;
+    }
+
+    .featured-movie .hero-btn:hover {
+        background: #FF4500;
+        transform: translateX(-50%) scale(1.05); 
+    }
+
+    .featured-movie h2 {
+        font-size: 2rem;
+    }
+}
+/*---------------------- Movie Grid section ------------------------- */
 .movie-grid {
     text-align: center;
     padding: 50px 80px;
@@ -173,9 +265,13 @@ nav .fa{
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
 
-
-/* Featured Videos Section */
+/* ---------------------trailers Section--------------------------- */
 .trailers {
     text-align: center;
     padding: 50px 80px;
@@ -225,17 +321,10 @@ nav .fa{
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
 }
-p{
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-
-}
-h1{
-    font-size: 36px;
-    font-weight: 600;
+@media(max-width:700px){
+    .video-row{
+        flex-direction: column;
+    }
 }
 /*-----------footer------------------*/
 .footer{
@@ -268,106 +357,14 @@ h1{
 }
 .footer p{
     margin-right: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    
 }
 
-@media(max-width: 700px){
-    nav img {
-        width: 50px; 
-        height: auto; 
-        margin-right: 10px;
-        margin-top: 10px;
-    }
-    .nav-links ul li {
-        display: block;
-    }
-    .nav-links{
-        position: fixed;
-        background: #A80C1E;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-
-    }
-    nav .fa{
-        display: block;
-        color: #fff;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-    .nav-links ul{
-        padding: 30px;
-    }
-    .hamburger-icon {
-        display: block;
-      }
-    .sub-header:has(.hamburger-icon input[type="checkbox"]:checked) .nav-links{
-        right: 0px;
-    }
-    /* Switch between icons */
-    .sub-header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
-        display: none;
-    }
-
-    .sub-header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-times {
-        display: inline-block;
-    }
-
-}
-@media(max-width:700px){
-    .row{
-        flex-direction: column;
-    }
-    .video-row{
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 700px) {
-    .featured-movie {
-        flex-direction: column; /* Stack content vertically */
-        padding: 20px;
-        text-align: center;
-        position: relative; /* Needed for proper positioning of child elements */
-    }
-
-    .featured-movie img {
-        width: 100%; /* Make the image responsive */
-        height: 300px;
-        border-radius: 10px;
-        margin: 0; /* Remove extra margins */
-        position: relative; /* Position context for the button */
-    }
-
-    .featured-movie .hero-btn {
-        position: absolute; /* Place the button over the image */
-        bottom: 80px; /* Position the button near the bottom of the image */
-        margin: auto; /* Center the button horizontally */
-        transform: translateX(-50%); /* Adjust for centering */
-        background: #A80C1E; /* Distinctive background for visibility */
-        color: #fff;
-        border: none;
-        padding: 12px 20px;
-        font-size: 1rem;
-        border-radius: 5px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add shadow for better visibility */
-        transition: 1s ease; /* Smooth hover effect */
-        z-index: 2;
-    }
-
-    .featured-movie .hero-btn:hover {
-        background: #FF4500; /* Slight color change on hover */
-        transform: translateX(-50%) scale(1.05); /* Slight scaling effect */
-    }
-
-    .featured-movie h2 {
-        font-size: 2rem; /* Reduce the font size for better readability */
-    }
-}
 
 
 

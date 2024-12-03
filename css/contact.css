@@ -219,12 +219,12 @@ nav .fa{
 }
 
 /*-----------footer------------------*/
-.footer{
+footer{
     width: 100%;
     text-align: center;
     padding: 30px 0;
 }
-.footer h4{
+footer h4{
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
@@ -238,7 +238,7 @@ nav .fa{
 .fa-heart-o, .fa-face-sad-tear{
     color: #A80C1E;
 }
-.footer p{
+footer p{
     margin-right: 15px;
     color: #ffffff;
     font-size: 14px;
@@ -246,7 +246,7 @@ nav .fa{
     line-height: 22px;
     padding: 10px;  
 }
-.footer hr {
+footer hr {
     border: none;
     height: 3px;
     background: linear-gradient(to right, #A80C1E, #FF4500, #A80C1E);

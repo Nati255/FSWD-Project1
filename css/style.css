@@ -365,12 +365,12 @@ h3{
 }
 
 /*-----------footer------------------*/
-.footer{
+footer{
     width: 100%;
     text-align: center;
     padding: 30px 0;
 }
-.footer hr {
+footer hr {
     border: none;
     height: 3px;
     background: linear-gradient(to right, #A80C1E, #FF4500, #A80C1E);
@@ -379,7 +379,7 @@ h3{
     width: 80%;
     
 }
-.footer h4{
+footer h4{
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
@@ -393,7 +393,7 @@ h3{
 .fa-heart-o, .fa-face-sad-tear{
     color: #A80C1E;
 }
-.footer p{
+footer p{
     margin-right: 15px;
 }
 
@@ -429,8 +429,6 @@ h3{
 
 }
 
-
-/*example*/
 
 .featured-movie {
     display: flex;
